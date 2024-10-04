@@ -1,0 +1,42 @@
+﻿@*
+    Tuple, Item1 is list of customers, Item2 is set to true if the current user has edit permissions.
+*@
+@model (List<LhDev.DemoOne.Models.Customer>, bool)
+
+@if (Model.Item2)
+{
+    <h2>Customers&nbsp;<a style="text-decoration: none;" href="Customers/Add">+</a></h2>
+}
+else
+{
+    <h2>Customers</h2>
+}
+
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>First Name</th>
+        <th>Surname</th>
+        <th>&nbsp;</th>
+    </tr>
+    </thead>
+    <tbody>
+        @foreach (var customer in Model.Item1)
+        {
+            <tr>
+                <td>@customer.Id</td>
+                <td>@customer.FirstName</td>
+                <td>@customer.Surname</td>
+                <td>
+                    @if (Model.Item2)
+                    {
+                        <a href="Customers/Edit/@customer.Id">Edit</a>
+                        <a href="Customers/Delete/@customer.Id">Delete</a>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

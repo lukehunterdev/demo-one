@@ -1,0 +1,37 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model LhDev.DemoOne.Models.LoginUser
+
+<h2>Login</h2>
+
+<form method="post">
+
+    <div class="mt-3">
+        <label class="form-label">Username</label>
+        <input type="text" class="form-control" asp-for="Username" />
+    </div>
+
+    <div class="mt-3">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control" asp-for="Password" />
+    </div>
+
+    <div class="mt-3">
+        <button type="submit" class="btn btn-primary">Login</button>
+    </div>
+
+</form>
+
+<br />
+<p>
+    Your session will expire after 15 minutes from logging in. This requires cookies to work, so by logging in you are consenting
+    for this demo to store cookies on your device.
+</p>
+
+<br/>
+
+<p>Please see the <a href="/">instructions</a> for more information.</p>

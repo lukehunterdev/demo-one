@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>Demo One</h2>
+
+<p>Welcome to my tech demo.</p>
+
+<h3>Web UI</h3>
+<p>Use the <a href="Customers">web UI</a> to view, add, and edit customer information. See Login Info below for login information</p>
+
+<h3>Swagger</h3>
+<p>
+    Use the <a href="swagger" target="_blank">RESTful interface</a> using Swagger. You will need to generate a JWT (JSON Web 
+    Token) using the authentication end-point first, then apply the token to Swagger. See Login Info below for login information.
+</p>
+<p>
+    To generate a JWT, click on POST under AuthAPI. In the Request body section, fill in the username and password lik so
+    <code>
+        {
+        &quot;username&quot;: &quot;the-username&quot;,
+        &quot;password&quot;: &quot;the-secret-password&quot;
+        }
+    </code>
+    , then click on Execute. If successful, you will have a JWT generated in the Response body section. Copy this to the 
+    clipboard, then near the top on the right, click Authorise. Paste the token in and click Login. You should now be able to use 
+    the API.
+    
+</p>
+
+<h3>Login Info</h3>
+<p>
+    You will be required to log in to perform some actions. To view customers, you can use the credential &apos;user1&apos; with
+    password &apos;secret&apos;. To be able to add or edit customers you will need to use &apos;user2&apos; with password
+    &apos;super-secret&apos;. This is true of both the <a href="Customers">web UI</a> and 
+    <a href="swagger" target="_blank">RESTful interface</a>.
+</p>

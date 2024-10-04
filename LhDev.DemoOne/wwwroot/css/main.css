@@ -1,0 +1,51 @@
+/*@import url("main-dark.css") (prefers-color-scheme: dark);
+@import url("main-light.css") (prefers-color-scheme: light);*/
+@import url("main-light.css");
+
+
+/*@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-col: #222;
+        --bg-col-rgb: 34, 34, 34;
+        --text-col: #eee;
+        --text-col-rgb: 238, 238, 238;
+        --light-text-col: #aaa;
+        --light-text-col-rgb: 170, 170, 170;
+        --form-bg-col: #333;
+        --form-text-col: #eee;
+        --form-border-col: #333;
+        --clean-icon: url('../assets/icons/clean-light.svg');
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg-col: #222;
+        --bg-col-rgb: 34, 34, 34;
+        --text-col: #eee;
+        --text-col-rgb: 238, 238, 238;
+        --light-text-col: #aaa;
+        --light-text-col-rgb: 170, 170, 170;
+        --form-bg-col: #333;
+        --form-text-col: #eee;
+        --form-border-col: #333;
+        --clean-icon: url('../assets/icons/clean-light.svg');
+    }
+}*/
+
+
+html,
+body {
+    background-color: var(--bg-col);
+    color: var(--text-col);
+    font-family: monospace, monospace;
+}
+
+header .container a, header .container a:hover {
+    font-size: 2rem;
+    color: var(--text-col);
+}
+
+footer {
+    padding-top: 5rem;
+}
